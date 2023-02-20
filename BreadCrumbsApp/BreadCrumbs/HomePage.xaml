@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreadCrumbs.HomePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Welcome to the BreadCrumbs Main Page"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Please Search for a Location Below!"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Map"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+    <!--Adds A Search Bar to the page-->
+            <SearchBar Placeholder="Search items..." />
+            
+            
+    <!--Adds A Map into the project through a webview-->
+            <!--<WebView Source=""/>-->
+            
+    
+    <!--Redirect to another Page Button-->
+            <Button 
+                Text="Home Page"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Clicked="OnHomeButtonClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
